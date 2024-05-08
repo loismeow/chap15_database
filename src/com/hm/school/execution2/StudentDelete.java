@@ -1,4 +1,6 @@
-package com.hm.school.execution;
+package com.hm.school.execution2;
+
+import com.hm.school.dao.DatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,25 +16,9 @@ public class StudentDelete {
     public static void main(String[] args) {
         Connection conn = null;
         Scanner scanner = new Scanner(System.in);
-        try {
-            Class.forName("oracle.jdbc.OracleDriver");
-            conn = DriverManager.getConnection(
-                    "jdbc:oracle:thin:@localhost:1521:orcl", "school", "1234");
+        conn = DatabaseConnection.getConnection();
+        deleteStudent(conn, scanner);
 
-            System.out.println("DB 접속 성공");
-
-            deleteStudent(conn, scanner);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }finally {
-            try {
-                if (conn != null) conn.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
     } // end of main
 
     private static void deleteStudent(Connection conn, Scanner scanner) {

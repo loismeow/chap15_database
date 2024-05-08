@@ -1,32 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f744d483-4329-4625-a9e3-49e172308c89" name="Changes" comment="" />
+    <list default="true" id="f744d483-4329-4625-a9e3-49e172308c89" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap15_database.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chap15_database.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hm/school/dao/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hm/school/dao/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hm/school/domain/Enrollment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hm/school/domain/Enrollment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hm/school/execution/SchoolManagementMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hm/school/execution/SchoolManagementMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hm/school/execution/StudentDBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hm/school/execution/StudentDBConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hm/school/execution/StudentDBSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hm/school/execution/StudentDBSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hm/school/execution/StudentDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hm/school/execution/StudentDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hm/school/execution/StudentInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hm/school/execution/StudentInsert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hm/school/execution/StudentUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hm/school/execution/StudentUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hm/school/execution2/StudentDBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hm/school/execution2/StudentDBConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hm/school/execution2/StudentDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hm/school/execution2/StudentDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hm/school/execution2/StudentInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hm/school/execution2/StudentInsert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hm/school/execution2/StudentUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hm/school/execution2/StudentUpdate.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2fwu3ebEyChQ7BAL564vcvU9lWY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/javaworks/workspace/javabasic/chap15_database/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SchoolManagementMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StudentDBConnect.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StudentDBSelect.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StudentDelete.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StudentInsert.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.hm.school.execution2.StudentDBConnect.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.hm.school.execution2.StudentInsert.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/javaworks/workspace/javabasic/chap15_database/src/com/hm/school/execution2&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/javaworks/workspace/javabasic/chap15_database/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\javaworks\workspace\javabasic\chap15_database\src\com\hm\school\execution2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hm.school.execution" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SchoolManagementMain">
+    <configuration name="SchoolManagementMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hm.school.execution.SchoolManagementMain" />
+      <module name="chap15_database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hm.school.execution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentDelete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hm.school.execution2.StudentDelete" />
+      <module name="chap15_database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hm.school.execution2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentInsert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hm.school.execution.StudentInsert" />
+      <module name="chap15_database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hm.school.execution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.hm.school.execution2.StudentDBConnect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hm.school.execution2.StudentDBConnect" />
+      <module name="chap15_database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hm.school.execution2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.hm.school.execution2.StudentInsert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hm.school.execution2.StudentInsert" />
+      <module name="chap15_database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hm.school.execution2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SchoolManagementMain" />
+        <item itemvalue="Application.StudentDelete" />
+        <item itemvalue="Application.com.hm.school.execution2.StudentInsert" />
+        <item itemvalue="Application.com.hm.school.execution2.StudentDBConnect" />
+        <item itemvalue="Application.StudentInsert" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-temurin-11.0.22-f644763e9732-193cb75d" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,9 +174,66 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>11</line>
+          <url>file://$PROJECT_DIR$/src/com/hm/school/execution2/StudentDBConnect.java</url>
+          <line>14</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hm/school/execution/SchoolManagementMain.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hm/school/execution/SchoolManagementMain.java</url>
+          <line>430</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hm/school/execution/SchoolManagementMain.java</url>
+          <line>1190</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hm/school/execution/SchoolManagementMain.java</url>
+          <line>873</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hm/school/execution/SchoolManagementMain.java</url>
+          <line>369</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hm/school/execution/SchoolManagementMain.java</url>
+          <line>647</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/hm/school/execution/SchoolManagementMain.java</url>
+          <line>368</line>
+          <properties class="com.hm.school.execution.SchoolManagementMain" method="registerStudent">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/hm/school/execution/SchoolManagementMain.java</url>
+          <line>781</line>
+          <properties class="com.hm.school.execution.SchoolManagementMain" method="displayTakes">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/hm/school/execution/SchoolManagementMain.java</url>
+          <line>944</line>
+          <properties class="com.hm.school.execution.SchoolManagementMain" method="displayCourses">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

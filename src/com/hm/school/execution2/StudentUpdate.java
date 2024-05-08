@@ -1,4 +1,6 @@
-package com.hm.school.execution;
+package com.hm.school.execution2;
+
+import com.hm.school.dao.DatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,38 +16,16 @@ public class StudentUpdate {
     public static void main(String[] args) {
         Connection conn = null;
         Scanner scanner = new Scanner(System.in);
-        try {
-            Class.forName("oracle.jdbc.OracleDriver");
-            conn = DriverManager.getConnection(
-                    "jdbc:oracle:thin:@localhost:1521:orcl", "school", "1234");
-
-            System.out.println("DB 접속 성공");
-
-            updateStudent(conn, scanner);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }finally {
-            try {
-                if (conn != null) conn.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
+        conn = DatabaseConnection.getConnection();
+        updateStudent(conn, scanner);
     } // end of main
 
     private static void updateStudent(Connection conn, Scanner scanner) {
-        System.out.println("수정할 학생의 ID를 입력하세요: ");
-        String id = scanner.nextLine();
-
-        // SQL 쿼리문 작성
-        String sql = "UPDATE student SET jumin = ?, name = ?, year = ?, address = ?, department_id = ? WHERE student_id = ?";
-
+        // PreparedStatement 객체 선언
         PreparedStatement pstmt = null;
-
         try {
-            pstmt = conn.prepareStatement(sql);
+            System.out.println("수정할 학생의 ID를 입력하세요: ");
+            String id = scanner.nextLine();
             // 사용자로부터 입력 받기
             System.out.print("새 주민번호: ");
             String jumin = scanner.nextLine();
@@ -59,6 +39,10 @@ public class StudentUpdate {
             System.out.print("새 학과 코드: ");
             int departmentId = scanner.nextInt();
             scanner.nextLine(); // 개행 문자 처리
+
+            // SQL 쿼리문 작성
+            String sql = "UPDATE student SET jumin = ?, name = ?, year = ?, address = ?, department_id = ? WHERE student_id = ?";
+            pstmt = conn.prepareStatement(sql);
 
             // PreparedStatement에 파라미터 설정
             pstmt.setString(1, jumin);
@@ -78,14 +62,8 @@ public class StudentUpdate {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
-            if (pstmt != null) {
-                try {
-                    pstmt.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
+        }finally{
+
         }
     }
 }
