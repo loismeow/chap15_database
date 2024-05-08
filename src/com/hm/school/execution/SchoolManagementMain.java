@@ -3,6 +3,7 @@ package com.hm.school.execution;
 import com.hm.school.dao.DatabaseConnection;
 
 import java.sql.*;
+import java.time.LocalDateTime;
 import java.util.Scanner;
 
 /**
@@ -145,37 +146,59 @@ public class SchoolManagementMain {
     }
 
     public static void displayEnrollment(){
-        String sql = "SELECT t.student_id, s.name student_name, r.course_id, r.name course_name, t.class_id, " +
-                "r.credit, c.year, c.semester, c.professor_id, p.name professor_name " +
-                "FROM takes t " +
-                "LEFT OUTER JOIN class c ON t.class_id=c.class_id " +
-                "LEFT OUTER JOIN course r ON c.course_id=r.course_id " +
-                "INNER JOIN student s on t.student_id=s.student_id " +
-                "INNER JOIN professor p ON c.professor_id=p.professor_id ";
+        String sql = "SELECT enroll_id, student_id, class_id, semester, enrollment_date ";
         try (PreparedStatement pstmt = conn.prepareStatement(sql);
              ResultSet rs = pstmt.executeQuery()) {
 
-            System.out.println("[등록된 성적 목록 조회]");
-            System.out.println("학생ID\t학생이름\t과목ID\t과목명\t수업ID\t학점\t년도\t학기\t교수ID\t교수이름");
+            System.out.println("[등록된 수강 신청 목록 조회]");
+            System.out.println("수강ID\t학생ID\t수업ID\t학기\t시간");
             System.out.println("----------------------------------------------------------------------");
             while (rs.next()) {
+                int enrollId = rs.getInt("enroll_id");
                 String studentId = rs.getString("student_id");
-                String studentName = rs.getString("student_name");
-                String courseId = rs.getString("course_id");
-                String courseName = rs.getString("course_name");
                 String classId = rs.getString("class_id");
-                int credit = rs.getInt("credit");
-                int year = rs.getInt("year");
                 String semester = rs.getString("semester");
-                String professorId = rs.getString("professor_id");
-                String professorName = rs.getString("professor_name");
-                System.out.println(studentId + "\t" + studentName + "\t" + courseId + "\t" + courseName + "\t" +
-                        classId + "\t" + credit + "\t" + year + "\t" + semester + "\t" + professorId + "\t" + professorName);
+                Timestamp enrollmentTimestamp = rs.getTimestamp("enrollment_date");
+                LocalDateTime enrollmentDate = enrollmentTimestamp.toLocalDateTime();
+                System.out.println(enrollId + "\t" + studentId + "\t" + classId + "\t" + semester + "\t" + enrollmentDate);
             }
         }catch (SQLException e){
             e.printStackTrace();
         }
 
+    }
+
+    public static void changeEnrollStatus(){
+        System.out.println("[수강 신청 정보 수정]");
+        System.out.print("수정할 수강 ID를 입력하세요: ");
+        int enrollId = scanner.nextInt();
+        scanner.nextLine();
+        System.out.print("새 학생 ID: ");
+        String studentId = scanner.nextLine();
+        System.out.print("새 수업 ID: ");
+        String classId = scanner.nextLine();
+        System.out.println("새 학기: ");
+        String semester = scanner.nextLine();
+
+        String sql = "UPDATE enrollment SET student_id = ?, class_id = ?, semester=? WHERE enroll_id = ?";
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, studentId);
+            pstmt.setString(2, classId);
+            pstmt.setString(3, semester);
+            pstmt.setInt(4, enrollId);
+            int rowsAffected = pstmt.executeUpdate();
+            if (rowsAffected > 0) {
+                System.out.println("수강 신청 정보가 성공적으로 업데이트 되었습니다.");
+            } else {
+                System.out.println("해당 ID의 수강 신청 정보를 찾을 수 없습니다.");
+            }
+        } catch (SQLException e) {
+            if (e instanceof SQLIntegrityConstraintViolationException) {
+                System.out.println("무결성 제약 조건 위반으로 등록에 실패했습니다.");
+            } else {
+                e.printStackTrace();
+            }
+        }
     }
 
     /**
